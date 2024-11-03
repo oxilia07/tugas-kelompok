@@ -1,22 +1,23 @@
-import logo from "./logo.svg";
+import React from 'react';
+import Header from './components/Header';
+import Home from './components/Home';
+import Footer from './components/Footer';
+import './App.css';
 
 function App() {
   return (
-    /* JSX */
     <div>
-      <h1>Hello React</h1>
-      <Hello />
-      <World/>
+      <header>
+        <Header />
+      </header>
+      <main>
+        <Home />
+      </main>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
-};
-
-const Hello = () => {
-  return <h2>Hello World</h2>;
-};
-
-const World = () => {
-  return <h3>Hello World 2</h3>;
-};
+}
 
 export default App;

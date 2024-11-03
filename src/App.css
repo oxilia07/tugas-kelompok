@@ -1,38 +1,74 @@
-.App {
+/* app.css */
+
+/* Basic resets and body styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Container for the entire app */
+div {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Styles for headers */
+h1 {
+  color: #333;
   text-align: center;
+  margin: 20px 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+/* Specific styles for Header, Home, Footer */
+header {
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 10px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+footer {
+  background-color: #282c34;
+  padding: 10px;
+  color: white;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+/* Styling for Logo and Search components */
+.logo,
+.search {
+  display: inline-block;
+  margin: 10px;
+}
+
+/* Generations section */
+.generations {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* CardInfo component */
+.card-info {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Evolution and TypeEffect sections */
+.evolution,
+.type-effect {
+  margin-top: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .generations {
+    flex-direction: column;
+    align-items: center;
   }
 }
